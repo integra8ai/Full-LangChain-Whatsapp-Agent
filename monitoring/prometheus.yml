@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'whatsapp-bot'
+    static_configs:
+      - targets: ['whatsapp-bot:5000']
+    metrics_path: /metrics
